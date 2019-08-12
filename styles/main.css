@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  border: 2px solid red;
+  width: 100vw;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.contact-details {
+  flex: 40%;
+  border: 2px solid green;
+}
+
+
+.about {
+  flex: 60%;
+  border: 2px solid black;
+}
+
+footer {
+  border: 2px solid blue;
+  display: inline;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  display: inline;
+}
