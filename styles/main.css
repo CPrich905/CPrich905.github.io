@@ -24,13 +24,13 @@ main {
   height: 10rem;
   overflow: scroll;
   position: absolute;
-  visibility: hidden;
+  /* visibility: hidden; */
   /* z-index: -1; */
 }
 
-.top-code:hover {
+/* .top-code:hover {
   visibility: visible;
-}
+} */
 
 .get-request {
   /* text-align: center; */
@@ -97,11 +97,18 @@ main {
   /* width: 60%; */
   border: 2px solid black;
   padding: 2px;
+  /* height: 20rem; */
 }
 
-.contact-details-code {
+.about-code {
+  background-color: lightblue;
+  height: 20rem;
   width: 100vw;
-  border: 2px dashed black;
+  opacity: 0.5;
+  color: grey;
+  height: 12rem;
+  overflow: scroll;
+  position: absolute;
 }
 
 .middle {
@@ -121,6 +128,14 @@ main {
 .projects-code {
   /* width: 100vw; */
   border: 2px dashed blue;
+  background-color: lightblue;
+  height: 30vh;
+  width: 100vw;
+  opacity: 0.5;
+  color: grey;
+  height: 10rem;
+  overflow: scroll;
+  position: absolute;
 }
 
 .project {
@@ -129,6 +144,11 @@ main {
   border: 2px solid purple;
   padding: 2px;
   align-content: center;
+}
+
+p.proj-bio {
+  height: 20vw;
+  overflow: scroll;
 }
 
 .project-code {
