@@ -5,53 +5,33 @@
 
 main {
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.top {
-  border: 2px solid red;
-  width: 100vw;
-}
-
-.top-code {
-  background-color: lightblue;
+.HTML {
+  width: 50%;
+  /* float: left; */
+  background-color: black;
   opacity: 0.5;
-  color: grey;
-  height: 10rem;
+  color: white;
+  height: 50%;
   overflow: scroll;
-  position: absolute;
-  /* visibility: hidden; */
-  /* z-index: -1; */
 }
 
-/* .top-code:hover {
-  visibility: visible;
-} */
-
-.get-request {
-  /* text-align: center; */
-  width: 100vw;
-  border: 2px dotted red;
-  /* text-decoration: underline; */
-}
-
-.header-code {
-  width: 100vw;
-  border: 2px dashed red;
+.display {
+  float: right;
+  width: 50%;
 }
 
 .header {
   background-color: white;
-  opacity: 0.8;
   width: 100vw;
   border: 2px double red;
   height: 10rem;
-  position: relative;
-  z-index: -1;
 }
 
 .indent-one {
@@ -70,25 +50,9 @@ main {
   padding-left: 240px;
 }
 
-.contact-details-code {
-  width: 100vw;
-  border: 2px dashed green;
-  background-color: lightblue;
-  opacity: 0.5;
-  color: grey;
-  height: 10rem;
-  overflow: scroll;
-  position: absolute;
-}
-
-.contact-details-code:hover {
-  visibility: hidden;
-}
-
 .contact-details {
   border: 2px solid green;
   padding: 2px;
-  position: relative;
   height: 10rem;
 }
 
@@ -98,17 +62,6 @@ main {
   border: 2px solid black;
   padding: 2px;
   /* height: 20rem; */
-}
-
-.about-code {
-  background-color: lightblue;
-  height: 20rem;
-  width: 100vw;
-  opacity: 0.5;
-  color: grey;
-  height: 12rem;
-  overflow: scroll;
-  position: absolute;
 }
 
 .middle {
@@ -125,19 +78,6 @@ main {
   justify-content: center;
 }
 
-.projects-code {
-  /* width: 100vw; */
-  border: 2px dashed blue;
-  background-color: lightblue;
-  height: 30vh;
-  width: 100vw;
-  opacity: 0.5;
-  color: grey;
-  height: 10rem;
-  overflow: scroll;
-  position: absolute;
-}
-
 .project {
   width: 32vw;
   display: inline-block;
@@ -149,11 +89,6 @@ main {
 p.proj-bio {
   height: 20vw;
   overflow: scroll;
-}
-
-.project-code {
-  width: 100vw;
-  border: 2px dashed purple;
 }
 
 li {
