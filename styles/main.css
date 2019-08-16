@@ -8,6 +8,7 @@ main {
   height: 100vh;
   display: flex;
   overflow: scroll;
+  margin: 0 auto;
 }
 
 .code {
@@ -16,11 +17,21 @@ main {
   background-color: black;
   color: white;
 }
+.html-box {
+  border: 2px solid grey;
+  width: 50vw;
+  height: 50%;
+}
+
+.html-header {
+  height: 7%;
+}
 
 .html {
   width: 50vw;
-  height: 40%;
+  height: 80%;
   overflow: scroll;
+  border: 2px solid grey;
 }
 
 .css {
