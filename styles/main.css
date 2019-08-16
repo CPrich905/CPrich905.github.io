@@ -1,37 +1,47 @@
 * {
   box-sizing: border-box;
-  padding: 5px;
+  font-family: 'Questrial', sans-serif;
 }
 
 main {
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  overflow: scroll;
 }
 
-.HTML {
-  width: 50%;
-  /* float: left; */
+.code {
+  width: 50vw;
+  height: 100vh;
   background-color: black;
-  opacity: 0.5;
   color: white;
-  height: 50%;
+}
+
+.html {
+  width: 50vw;
+  height: 40%;
+  overflow: scroll;
+}
+
+.css {
+  width: 50vw;
   overflow: scroll;
 }
 
 .display {
-  float: right;
-  width: 50%;
+  width: 50vw;
+  border: 2px double red;
+  overflow: scroll;
 }
 
 .header {
-  background-color: white;
-  width: 100vw;
-  border: 2px double red;
-  height: 10rem;
+  width: 50vw;
+  height: 5rem;
+  text-align: center;
+}
+
+h2, h3, h4, h5 {
+  text-align: center;
 }
 
 .indent-one {
@@ -56,38 +66,44 @@ main {
   height: 10rem;
 }
 
-
 .about {
-  /* width: 60%; */
   border: 2px solid black;
   padding: 2px;
-  /* height: 20rem; */
 }
 
 .middle {
-  /* display: inline-flex; */
   width: 100vw;
   border: 2px solid yellow;
   padding: 2px;
 }
 
+.projects-container {
+  width: 50vw;
+  border: 2px dashed blue;
+}
+
 .projects {
   border: 2px solid blue;
   padding: 2px;
-  width: 100vw;
-  justify-content: center;
+  width: 50vw;
+  overflow-x: scroll;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .project {
-  width: 32vw;
-  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  display: inline-flex;
+  flex-direction: column;
   border: 2px solid purple;
   padding: 2px;
-  align-content: center;
+  white-space: normal;
 }
 
 p.proj-bio {
-  height: 20vw;
+  height: 50%;
+  display: inline-block;
   overflow: scroll;
 }
 
