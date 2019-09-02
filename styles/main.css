@@ -6,12 +6,92 @@
 main {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  overflow: scroll;
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 4.5em;
+}
+
+h2{
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 3em
+}
+
+h4 {
+  font-size: 2.5em;
+}
+
+h5 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.75em;
+}
+
+.display {
+  width: 100vw;
+  border: 2px solid green;
+}
+
+.header {
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  box-shadow: .5em .75em .5em lightgrey;
+}
+
+.about, .projects-container, .project-text, .projects, .me-container, .me-text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #66e0ff;
+}
+
+.projects-container, .me-container {
+  height: 20%;
+}
+
+.project-text, .me-text {
+  height: 20%;
+}
+
+.projects, .me-images {
+  padding: 2px;
+  width: 90%;
+  height: 80%;
+  overflow-x: scroll;
+  display: flex;
+  white-space: nowrap;
+  box-shadow: .5em .75em .5em lightgrey;
+}
+
+.project, .me-images {
+  display: inline-block;
+}
+.thumb {
+  height: 200px;
+  width: 400px;
+  object-fit: cover;
+}
+
 .code {
+  background-color: black;
+}
+
+
+
+
+
+/* .code {
   width: 50vw;
   height: 100vh;
   background-color: black;
@@ -124,4 +204,4 @@ li {
 
 ul {
   display: inline;
-}
+} */
