@@ -35,7 +35,14 @@ p {
 
 .display {
   width: 100vw;
-  border: 2px solid green;
+  background-image:
+    url('../assets/background3.JPG');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: saturation;
+  position: relative;
 }
 
 .profile {
@@ -52,7 +59,6 @@ p {
 .about, .projects-container, .project-text, .projects, .me-container, .me-text {
   margin: 0 auto;
   text-align: center;
-  background-color: #66e0ff;
   padding: 2px;
 }
 
@@ -93,11 +99,13 @@ p {
   .display, .code {
     width: 50%;
     height: 100%;
-    overflow-y: scroll;
   }
   .display {
     float: left;
-    /* align-items: center; */
+    padding: 5px;
+    overflow: scroll;
+    flex-direction: column;
+    margin: 0 auto;
   }
   .code {
     float: right;
@@ -119,6 +127,20 @@ p {
     float: left;
     width: 60%;
   }
+
+
+  .about, .projects-container, .project-text, .me-container, .me-text {
+    height: auto;
+    text-align: left;
+  }
+
+  .project-text, .me-text {
+    height: 20%;
+  }
+  .project {
+    height: 80%;
+  }
+
 }
 
 /* .code {
