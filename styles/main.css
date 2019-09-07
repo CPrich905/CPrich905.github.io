@@ -97,13 +97,13 @@ p {
   }
   .display {
     float: left;
-    align-items: center;
+    /* align-items: center; */
   }
   .code {
     float: right;
   }
   .profile {
-    height: 25%;
+    height: 230px;
     margin: 0 auto;
     border: 2px blue solid;
     padding: 10px;
