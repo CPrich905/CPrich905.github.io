@@ -2,7 +2,6 @@
   box-sizing: border-box;
   font-family: 'Questrial', sans-serif;
 }
-
 main {
   width: 100vw;
   height: 100vh;
@@ -32,7 +31,6 @@ h5 {
 p {
   font-size: 1.75em;
 } */
-
 .display {
   width: 100vw;
   background-image:
@@ -44,32 +42,26 @@ p {
   background-blend-mode: saturation;
   position: relative;
 }
-
 .profile {
   text-align: center;
 }
-
 .profile-pic {
   border-radius: 50%;
   width: 200px;
   height: 200px;
   box-shadow: .5em .75em .5em lightgrey;
 }
-
 .about, .projects-container, .project-text, .projects, .me-container, .me-text {
   margin: 0 auto;
   text-align: center;
   padding: 2px;
 }
-
 .projects-container, .me-container {
   height: 20%;
 }
-
 .project-text, .me-text {
   height: 20%;
 }
-
 .projects, .me-images {
   padding: 2px;
   height: 80%;
@@ -79,7 +71,6 @@ p {
   box-shadow: .5em .75em .5em lightgrey;
   width: 100%;
 }
-
 .project, .me-images {
   display: inline-block;
   width: 100%;
@@ -89,9 +80,13 @@ p {
   width: 200px;
   object-fit: cover;
 }
-
-.code {
-  background-color: black;
+.code-header {
+  height: 2%;
+}
+.html-box, .css-box {
+  height: 49%;
+  display: inline-block;
+  overflow: scroll;
 }
 
 /* desktop styling */
@@ -113,7 +108,6 @@ p {
   .profile {
     height: 230px;
     margin: 0 auto;
-    border: 2px blue solid;
     padding: 10px;
   }
   .profile-pic {
@@ -127,133 +121,14 @@ p {
     float: left;
     width: 60%;
   }
-
-
   .about, .projects-container, .project-text, .me-container, .me-text {
     height: auto;
     text-align: left;
   }
-
   .project-text, .me-text {
     height: 20%;
   }
   .project {
     height: 80%;
   }
-
 }
-
-/* .code {
-  width: 50vw;
-  height: 100vh;
-  background-color: black;
-  color: white;
-}
-.html-box {
-  border: 2px solid grey;
-  width: 50vw;
-  height: 50%;
-}
-
-.html-header {
-  height: 7%;
-}
-
-.html {
-  width: 50vw;
-  height: 80%;
-  overflow: scroll;
-  border: 2px solid grey;
-}
-
-.css {
-  width: 50vw;
-  overflow: scroll;
-}
-
-.display {
-  width: 50vw;
-  border: 2px double red;
-  overflow: scroll;
-}
-
-.profile {
-  width: 50vw;
-  height: 5rem;
-  text-align: center;
-}
-
-h2, h3, h4, h5 {
-  text-align: center;
-}
-
-.indent-one {
-  padding-left: 60px;
-}
-
-.indent-two {
-  padding-left: 120px;
-}
-
-.indent-three {
-  padding-left: 180px;
-}
-
-.indent-four {
-  padding-left: 240px;
-}
-
-.contact-details {
-  border: 2px solid green;
-  padding: 2px;
-  height: 10rem;
-}
-
-.about {
-  border: 2px solid black;
-  padding: 2px;
-}
-
-.middle {
-  width: 100vw;
-  border: 2px solid yellow;
-  padding: 2px;
-}
-
-.projects-container {
-  width: 50vw;
-  border: 2px dashed blue;
-}
-
-.projects {
-  border: 2px solid blue;
-  padding: 2px;
-  width: 50vw;
-  overflow-x: scroll;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.project {
-  width: 20vw;
-  height: 20vw;
-  display: inline-flex;
-  flex-direction: column;
-  border: 2px solid purple;
-  padding: 2px;
-  white-space: normal;
-}
-
-p.proj-bio {
-  height: 50%;
-  display: inline-block;
-  overflow: scroll;
-}
-
-li {
-  display: inline;
-}
-
-ul {
-  display: inline;
-} */
