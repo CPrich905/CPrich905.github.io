@@ -35,7 +35,7 @@ p {
   width: 100vw;
   background-image:
     url('../assets/background3.JPG');
-  height: 500px;
+  /* height: 500px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,6 +88,11 @@ p {
   display: inline-block;
   overflow: scroll;
 }
+.gist {
+  width: 100vw !important;
+  max-height: 50vw;
+  /* overflow-wrap: anywhere; */
+}
 
 /* desktop styling */
 @media only screen and (min-width: 1200px) {
@@ -134,7 +139,6 @@ p {
   .gist {
     width: 50vw !important;
     overflow-wrap: anywhere;
-
   }
 
   /* .gist-data {
