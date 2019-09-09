@@ -94,12 +94,12 @@ p {
   .display, .code {
     width: 50%;
     height: 100%;
+    overflow: scroll;
+    flex-direction: column;
   }
   .display {
     float: left;
-    padding: 5px;
-    overflow: scroll;
-    flex-direction: column;
+    /* padding: 5px; */
     margin: 0 auto;
   }
   .code {
@@ -131,4 +131,14 @@ p {
   .project {
     height: 80%;
   }
+  .gist {
+    width: 50vw !important;
+    overflow-wrap: anywhere;
+
+  }
+
+  /* .gist-data {
+    max-height: 50%;
+    max-width: 50vw;
+  } */
 }
