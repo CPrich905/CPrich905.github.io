@@ -3,8 +3,8 @@
   font-family: 'Questrial', sans-serif;
 }
 main {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@ p {
 } */
 .display {
   width: 100vw;
+  height: 100vh;
   background-image:
     url('../assets/background3.JPG');
   /* height: 500px; */
@@ -44,6 +45,7 @@ p {
 }
 .profile {
   text-align: center;
+  height: 20vh;
 }
 .profile-pic {
   border-radius: 50%;
@@ -57,7 +59,7 @@ p {
   padding: 2px;
 }
 .projects-container, .me-container {
-  height: 20%;
+  height: 30%;
 }
 .project-text, .me-text {
   height: 20%;
@@ -82,7 +84,7 @@ p {
 
 .thumb {
   height: 200px;
-  width: 200px;
+  /* width: 200px; */
   object-fit: cover;
 }
 .code-header {
