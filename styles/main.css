@@ -6,38 +6,13 @@ main {
   /* width: 100vw;
   height: 100vh; */
   margin: 0 auto;
-  /* font-size: 1em; */
+  /* font-size: 2em; */
 }
 
-/* h1 {
-  font-size: 4.5em;
-}
-
-h2{
-  font-size: 4em;
-}
-
-h3 {
-  font-size: 3em
-}
-
-h4 {
-  font-size: 2.5em;
-}
-
-h5 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1.75em;
-} */
 .display {
   width: 100vw;
-  max-height: 100vh;
   background-image:
     url('../assets/background3.JPG');
-  /* height: 500px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,20 +21,27 @@ p {
 }
 .profile {
   text-align: center;
-  height: 20vh;
+  height: 35vh;
 }
 .profile-pic {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  height: 100%;
+  width: 30%;
   box-shadow: .5em .75em .5em lightgrey;
+  float: right;
+  margin: 10px;
+  margin-top: 20px;
+}
+.profile-text {
+  float: left;
+  width: 60%;
 }
 .about, .projects-container, .project-text, .projects, .me-container, .me-text {
   margin: 0 auto;
-  text-align: center;
-  padding: 2px;
+  text-align: left;
+  padding: 5px;
 }
-.projects-container, .me-container {
+.about, .projects-container, .me-container {
   height: 30%;
 }
 .project-text, .me-text {
@@ -92,13 +74,14 @@ p {
   height: 2%;
 }
 .html-box, .css-box {
-  height: 49vh;
+  height: 48%;
   display: inline-block;
-  overflow: scroll;
+
 }
 .gist {
   width: 100vw !important;
-  max-height: 50vw;
+  max-height: 50vh;
+  overflow: scroll;
   /* overflow-wrap: anywhere; */
 }
 
@@ -106,7 +89,7 @@ p {
 @media only screen and (min-width: 1050px) {
   .display, .code {
     width: 50%;
-    height: 100%;
+    height: 100vh;
     overflow: scroll;
     flex-direction: column;
   }
@@ -146,7 +129,7 @@ p {
   }
   .gist {
     width: 50vw !important;
-    height: 50%;
+    height: 100%;
     overflow-wrap: anywhere;
   }
   .html-box {
