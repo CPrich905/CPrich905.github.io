@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Questrial', sans-serif;
+  color: white;
 }
 main {
   /* width: 100vw;
@@ -12,11 +13,12 @@ main {
 .display {
   width: 100vw;
   background-image:
+    linear-gradient(black, black),
     url('../assets/background3.JPG');
+    background-blend-mode: saturation;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: saturation;
   position: relative;
 }
 .profile {
