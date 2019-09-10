@@ -19,7 +19,7 @@ body {
   position: relative;
 }
 
-.profile, .about, .project-text, .me-text, .projects-container {
+.profile, .about, .project-text, .projects-container, .me-container {
   text-align: center;
   padding: 2px;
 }
@@ -53,6 +53,7 @@ body {
   padding: 2px;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 .proj-thumb, .thumb {
@@ -111,7 +112,6 @@ body {
   }
   .about, .projects-container, .project-text, .me-container, .me-text {
     height: auto;
-    text-align: left;
   }
   .project-text, .me-text {
     height: 20%;
