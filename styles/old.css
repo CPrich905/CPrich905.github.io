@@ -3,8 +3,8 @@
   font-family: 'Questrial', sans-serif;
   color: white;
 }
-body {
-  margin: 0;
+main {
+  margin: 0 auto;
 }
 
 .display {
@@ -18,67 +18,76 @@ body {
   background-size: cover;
   position: relative;
 }
-
-.profile, .about, .project-text, .me-text, .projects-container {
+.profile {
   text-align: center;
-  padding: 2px;
+  min-height: 35%;
+  /* width: 70%; */
 }
-
 .profile-pic {
   border-radius: 50%;
-  height: 200px;
+  /* height: 100%; */
+  max-width: 30% !important;
+  box-shadow: .5em .75em .5em lightgrey;
+  float: right;
+  margin: 10px;
+  margin-top: 20px;
+  justify-content: center;
 }
-
-.pro-link {
-  text-decoration: none;
+.profile-text {
+  float: left;
+  width: 65%;
 }
-
-.skills {
-  text-transform: uppercase;
+.about, .projects-container, .project-text, .projects, .me-container, .me-text {
+  margin: 0 auto;
+  text-align: left;
   padding: 5px;
 }
-
+.about, .projects-container, .me-container {
+  height: 30%;
+}
+.project-text, .me-text {
+  height: 20%;
+}
 .projects, .me-images {
   padding: 2px;
   height: 80%;
   overflow-x: scroll;
   display: flex;
   white-space: nowrap;
-  /* box-shadow: .5em .75em .5em lightgrey; */
-  /* width: 100%; */
+  box-shadow: .5em .75em .5em lightgrey;
+  width: 100%;
 }
-
-.project {
-  margin: 2px;
-  padding: 2px;
+.project, .me-images {
   display: inline-block;
   width: 100%;
 }
 
-.proj-thumb, .thumb {
+.proj-thumb {
   height: 200px;
+}
+
+.thumb {
+  height: 200px;
+  /* width: 200px; */
   object-fit: cover;
-  margin-left: 2px;
 }
-
-.html-box {
+.code-header {
+  height: 2%;
+}
+.html-box, .css-box {
+  height: 48%;
   display: inline-block;
-}
 
-.html-header, .css-header {
-  color: black;
-  text-align: center;
 }
-
 .gist {
   width: 100vw !important;
   max-height: 50vh;
   overflow: scroll;
+  /* overflow-wrap: anywhere; */
 }
 
-
 /* desktop styling */
-@media only screen and (min-width: 1048px) {
+@media only screen and (min-width: 1000px) {
   .display, .code {
     width: 50%;
     height: 100vh;
@@ -127,4 +136,9 @@ body {
   .html-box {
     height: ;
   }
+
+  /* .gist-data {
+    max-height: 50%;
+    max-width: 50vw;
+  } */
 }
