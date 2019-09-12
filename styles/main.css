@@ -1,3 +1,4 @@
+/* MOBILE & BASE STYLING */
 * {
   box-sizing: border-box;
   font-family: 'Questrial', sans-serif;
@@ -35,7 +36,6 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  /* flex-wrap: wrap */
 }
 
 .contact-icon {
@@ -97,7 +97,7 @@ body {
 }
 
 
-/* desktop styling */
+/* DESKTOP STYLING */
 @media only screen and (min-width: 1048px) {
   .display, .code {
     width: 50%;
@@ -105,26 +105,30 @@ body {
     overflow: scroll;
     flex-direction: column;
   }
+
   .display {
     float: left;
     /* padding: 5px; */
     margin: 0 auto;
   }
+  
   .code {
     float: right;
   }
+  
   .profile {
     height: 230px;
     margin: 0 auto;
     padding: 10px;
   }
+  
   .profile-pic {
-    border-radius: 50%;
-    width: 200px;
-    /* height: 200px; */
+    align-self: center;
+    margin: 5px;
     box-shadow: .5em .75em .5em lightgrey;
     float: right;
   }
+  
   .profile-text {
     float: left;
     width: 60%;
