@@ -8,7 +8,8 @@
   <title>Charles Prichard</title>
   <link rel="stylesheet" href="styles/main.css">
   <script src="./scripts/index.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="">
 </head>
 
 <body>
@@ -18,8 +19,17 @@
       <div class="profile">
         <h1 class="profile-text">Charles Prichard</h1>
         <a href="https://imgur.com/kmGm3IE"><img src="https://i.imgur.com/kmGm3IE.jpg" title="source: imgur.com" class="profile-pic"/></a>
-        <h4 class="profile-text">Adventurer, full-stack web-developer</h4>
-        <h5 class="profile-text">See my career history on <span><a class="pro-link" href="https://www.linkedin.com/in/charles-prichard/" target="_blank">LinkedIn</a></span> or check out my code on <span> <a class="pro-link" href="https://github.com/CPrich905" target="_blank">Github</a></span></h5>
+        <h4 class="profile-text">Adventurer, full stack web developer</h4>
+        <!-- <h5 class="profile-text">See my career history on <span><a class="pro-link" href="https://www.linkedin.com/in/charles-prichard/" target="_blank">LinkedIn</a></span> or check out my code on <span> <a class="pro-link" href="https://github.com/CPrich905" target="_blank">Github</a></span><i class="fab fa-github"></i></h5> -->
+        <div class="contact">
+          <a href="https://www.linkedin.com/in/charles-prichard/" target="_blank">
+            <i class="fab fa-linkedin-in contact-icon" ></i>
+          </a>
+          <a href="https://github.com/CPrich905" target="_blank">
+            <i class="fab fa-github contact-icon"></i>
+          </a>
+          
+      </div>
       </div>
 
       <div class="about">
@@ -28,7 +38,7 @@
       </div>
 
       <div class="projects-container">
-        <p class="project-text">Technology I've used and things I've built...</p>
+        <h4 class="project-text">Technology I've used:</h4>
         <span class="skills">html5</span>
         <span class="skills">css</span>
         <span class="skills">javascript</span>
@@ -43,40 +53,69 @@
         <span class="skills">git</span>
         <span class="skills">express.js</span>
         <span class="skills">heroku</span>
+      
+        <h4 class="things-text">Things I've built:</h4>
+
         <div class="projects">
           <div class="project">
-            <h5 class="proj-head">Space Invaders</h5>
+              <h5 class="proj-head">Space Invaders</h5>
             <img src="assets/spaceinvaders.jpg" alt="Space Invaders" class="proj-thumb">
             <br />
-            <a href="https://github.com/CPrich905/sei-project-1">See the code</a>
-            <a href="">Use the App</a>
+            <div class="proj-deets">
+              <!-- <p class="proj-des">Recreating the classic arcade game in vanilla javascript.</p> -->
+              <a href="https://github.com/CPrich905/sei-project-1" class="project-code">See the code</a>
+              <a href="https://cprich905.github.io/sei-project-1/" class="deployed-link">Use the App</a>
+            </div>
+            
           </div>
           <div class="project">
-            <h5 class="proj-head">Films</h5>
+           
+              <h5 class="proj-head">The Movie DataBase</h5>
+            
             <img src="assets/displaymovie.gif" alt="TMDB2" class="proj-thumb">
             <br />
-            <a href="https://github.com/CPrich905/sei-project-2">See the code</a>
-            <a href="https://tmdb2.herokuapp.com/">Use the App</a>
+            <div class="proj-deets">
+              <!-- <p class="proj-des">Pair-coded project, recreating an IMDB style page using a public API.</p> -->
+              <a href="https://github.com/CPrich905/sei-project-2" class="project-code">See the code</a>
+              <a href="https://tmdb2.herokuapp.com/" class="deployed-link">Use the App</a>
+            </div>
+
           </div>
           <div class="project">
-            <h5 class="proj-head">Events</h5>
+            <div>
+              <h5 class="proj-head">Stranger Things</h5>
+             
+            </div>
+            
             <img src="assets/stangerthings.jpg" alt="Stranger Things" class="proj-thumb">
             <br />
-            <a href="https://github.com/CPrich905/sei-group-project">See the code</a>
-            <a href="https://strangerthings-seigroup.herokuapp.com/">Use the App</a>
+            <div class="proj-deets">
+              <!-- <p class="proj-des">Our group project, a meet-up web app.</p> -->
+              <a href="https://github.com/CPrich905/sei-group-project" class="project-code">See the code</a>
+              <a href="https://strangerthings-seigroup.herokuapp.com/" class="deployed-link">Use the App</a>         
+            </div>
+     
           </div>
           <div class="project">
-            <h5 class="proj-head">Recipes</h5>
+            <div class="proj-text">
+              <h5 class="proj-head">Cooking with Mum</h5>
+             
+            </div>
+            
             <img src="assets/cooking.jpg" alt="Cooking With Mum" class="proj-thumb">
             <br />
-            <a href="https://github.com/CPrich905/sei-project-4">See the code</a>
-            <a href="https://cookingwithmum.herokuapp.com/">Use the App</a>
+            <div class="proj-deets">
+                <!-- <p class="proj-des">A simple recipe sharing site using a Python Flask API, serving a PostgreSQL database.</p>   -->
+              <a href="https://github.com/CPrich905/sei-project-4" class="project-code">See the code</a>
+              <a href="https://cookingwithmum.herokuapp.com/" class="deployed-link">Use the App</a>              
+            </div>
+
           </div>
         </div>
       </div>
 
       <div class="me-container">
-        <p class="me-text">If I'm not at my desk, I could be in one of these awesome places...<p>
+        <p class="me-text">If I'm not at my desk, I really hope I'm in one of these awesome places...<p>
         <div class="me-images">
           <img src="assets/me/aonach-egach-1.jpg" alt="Aonach Egach, UK" class="thumb">
           <img src="assets/me/aonach-egach-2.jpg" alt="Aonach Egach, UK" class="thumb">

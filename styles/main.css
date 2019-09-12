@@ -3,6 +3,7 @@
   font-family: 'Questrial', sans-serif;
   color: white;
 }
+
 body {
   margin: 0;
 }
@@ -17,9 +18,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  text-shadow: 1px 1px grey;
 }
 
-.profile, .about, .project-text, .projects-container, .me-container {
+.profile, .about, .projects-container, .me-container {
   text-align: center;
   padding: 2px;
 }
@@ -29,8 +31,15 @@ body {
   height: 200px;
 }
 
-.pro-link {
-  text-decoration: none;
+.contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* flex-wrap: wrap */
+}
+
+.contact-icon {
+  margin: 5px;
 }
 
 .skills {
@@ -44,22 +53,32 @@ body {
   overflow-x: scroll;
   display: flex;
   white-space: nowrap;
-  /* box-shadow: .5em .75em .5em lightgrey; */
-  /* width: 100%; */
 }
 
 .project {
   margin: 2px;
   padding: 2px;
   display: inline-block;
-  width: 100%;
+  max-width: 400px;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.proj-deets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .proj-thumb, .thumb {
   height: 200px;
   object-fit: cover;
   margin-left: 2px;
+}
+
+.project-code, .deployed-link {
+  text-decoration: none;
+  margin: 2px;
 }
 
 .html-box {
@@ -102,7 +121,7 @@ body {
   .profile-pic {
     border-radius: 50%;
     width: 200px;
-    height: 200px;
+    /* height: 200px; */
     box-shadow: .5em .75em .5em lightgrey;
     float: right;
   }
@@ -110,21 +129,39 @@ body {
     float: left;
     width: 60%;
   }
+
+  .contact {
+    display: flex;
+    float: left;
+    justify-content: center;
+    text-align: center;
+  }
+
   .about, .projects-container, .project-text, .me-container, .me-text {
     height: auto;
   }
-  .project-text, .me-text {
+  
+  .me-text {
     height: 20%;
   }
+
+.things-text {
+  margin-top: 10rems;
+  margin-bottom: 0;
+}
+
   .project {
     height: 80%;
   }
+
   .gist {
     width: 50vw !important;
     height: 100%;
     overflow-wrap: anywhere;
   }
-  .html-box {
-    height: ;
+
+  .gist-meta {
+    display: none;
   }
+
 }
