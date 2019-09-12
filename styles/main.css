@@ -82,7 +82,7 @@ body {
 
 .project-code, .deployed-link {
   text-decoration: none;
-  margin: 2px;
+  margin: .5rem 1rem;
 }
 
 .html-box {
@@ -157,10 +157,10 @@ body {
     height: 20%;
   }
 
-.things-text {
-  margin-top: 10rems;
-  margin-bottom: 0;
-}
+  .things-text {
+    margin-top: 10rems;
+    margin-bottom: 0;
+  }
 
   .project {
     height: 80%;
