@@ -136,6 +136,7 @@ body {
   .profile-text {
     float: left;
     width: 60%;
+    margin-top: 1.5rem;
   }
 
   .contact {
