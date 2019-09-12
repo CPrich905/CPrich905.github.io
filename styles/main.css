@@ -32,6 +32,10 @@ body {
   height: 200px;
 }
 
+.i-p-link {
+  text-decoration: none;
+}
+
 .contact {
   display: flex;
   text-align: center;
@@ -111,24 +115,24 @@ body {
     /* padding: 5px; */
     margin: 0 auto;
   }
-  
+
   .code {
     float: right;
   }
-  
+
   .profile {
     height: 230px;
     margin: 0 auto;
     padding: 10px;
   }
-  
+
   .profile-pic {
     align-self: center;
     margin: 5px;
     box-shadow: .5em .75em .5em lightgrey;
     float: right;
   }
-  
+
   .profile-text {
     float: left;
     width: 60%;
@@ -141,10 +145,14 @@ body {
     text-align: center;
   }
 
+  .i-p-link {
+    display: none;
+  }
+
   .about, .projects-container, .project-text, .me-container, .me-text {
     height: auto;
   }
-  
+
   .me-text {
     height: 20%;
   }
