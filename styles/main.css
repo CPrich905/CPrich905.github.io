@@ -128,7 +128,7 @@ body {
 
   .profile-pic {
     align-self: center;
-    margin: 5px;
+    margin: .5rem 2.5rem;
     box-shadow: .5em .75em .5em lightgrey;
     float: right;
   }
