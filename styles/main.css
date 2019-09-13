@@ -13,7 +13,7 @@ body {
   width: 100vw;
   background-image:
     linear-gradient(black, black),
-    url('../assets/background3.JPG');
+    url('https://i.imgur.com/zFHbMjR.jpg');
     background-blend-mode: saturation;
   background-position: center;
   background-repeat: no-repeat;
