@@ -46,6 +46,14 @@ body {
   margin: 5px;
 }
 
+.about {
+  font-size: large;
+}
+
+about-text {
+  font-weight: bold;
+}
+
 .skills {
   text-transform: uppercase;
   padding: 5px;
