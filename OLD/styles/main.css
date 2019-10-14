@@ -1,0 +1,188 @@
+/* MOBILE & BASE STYLING */
+* {
+  box-sizing: border-box;
+  font-family: 'Questrial', sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.display {
+  width: 100vw;
+  background-image:
+    linear-gradient(black, black),
+    url('https://i.imgur.com/zFHbMjR.jpg');
+    background-blend-mode: saturation;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-shadow: 1px 1px grey;
+}
+
+.profile, .about, .projects-container, .me-container {
+  text-align: center;
+  padding: 2px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 200px;
+}
+
+.i-p-link {
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  margin: 5px;
+}
+
+.about {
+  font-size: large;
+}
+
+about-text {
+  font-weight: bold;
+}
+
+.skills {
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.projects, .me-images {
+  padding: 2px;
+  height: 80%;
+  overflow-x: scroll;
+  display: flex;
+  white-space: nowrap;
+}
+
+.project {
+  margin: 2px;
+  padding: 2px;
+  display: inline-block;
+  max-width: 400px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.proj-deets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proj-thumb, .thumb {
+  height: 200px;
+  object-fit: cover;
+  margin-left: 2px;
+}
+
+.project-code, .deployed-link {
+  text-decoration: none;
+  margin: .5rem 1rem;
+}
+
+.html-box {
+  display: inline-block;
+}
+
+.html-header, .css-header {
+  color: black;
+  text-align: center;
+}
+
+.gist {
+  width: 100vw !important;
+  max-height: 50vh;
+  overflow: scroll;
+}
+
+
+/* DESKTOP STYLING */
+@media only screen and (min-width: 1048px) {
+  .display, .code {
+    width: 50%;
+    height: 100vh;
+    overflow: scroll;
+    flex-direction: column;
+  }
+
+  .display {
+    float: left;
+    /* padding: 5px; */
+    margin: 0 auto;
+  }
+
+  .code {
+    float: right;
+  }
+
+  .profile {
+    height: 230px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .profile-pic {
+    align-self: center;
+    margin: .5rem 2.5rem;
+    box-shadow: .5em .75em .5em lightgrey;
+    float: right;
+  }
+
+  .profile-text {
+    float: left;
+    width: 60%;
+    margin-top: 1.5rem;
+  }
+
+  .contact {
+    display: flex;
+    float: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .i-p-link {
+    display: none;
+  }
+
+  .about, .projects-container, .project-text, .me-container, .me-text {
+    height: auto;
+  }
+
+  .me-text {
+    height: 20%;
+  }
+
+  .things-text {
+    margin-top: 10rems;
+    margin-bottom: 0;
+  }
+
+  .project {
+    height: 80%;
+  }
+
+  .gist {
+    width: 50vw !important;
+    height: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .gist-meta {
+    display: none;
+  }
+
+}
