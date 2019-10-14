@@ -3,73 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Charles Prichard</title>
   <link rel="stylesheet" href="styles/main.css">
-  <script src="./scripts/index.js"></script>
+  <!-- <script src="./scripts/index.js"></script> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="">
 </head>
 
 <body>
 
     <!-- DISPLAY  -->
-    <div class="display">
-      <div class="profile">
-        <h1 class="profile-text">Charles Prichard</h1>
-        <a href="https://imgur.com/kmGm3IE"><img src="https://i.imgur.com/kmGm3IE.jpg" title="source: imgur.com" class="profile-pic"/></a>
-        <h4 class="profile-text">Adventurer, full stack web developer</h4>
+  
+      <div class="profile fullheight">
+        <h1 class="profile-header">Charles Prichard</h1>
 
-        <div class="contact profile-text">
-          <a href="https://www.linkedin.com/in/charles-prichard/" target="_blank">
-            <i class="fab fa-linkedin-in contact-icon" ></i>
-          </a>
-          <a href="https://github.com/CPrich905" target="_blank">
-            <i class="fab fa-github contact-icon"></i>
-          </a>
+          <div class="profile-pic-div">
+            <img src="https://i.imgur.com/NsDhgUi.jpg" class="profile-pic"/>
+          </div>
+          
+          <div class="profile-text">
+            <h4 class="profile-byline">Full stack web developer</h4>
+            <a href="https://www.linkedin.com/in/charles-prichard/" target="_blank" class="social-icons">
+              <i class="fab fa-linkedin-in contact-icon" ></i>
+            </a>
+            <a href="https://github.com/CPrich905" target="_blank" class="social-icons">
+              <i class="fab fa-github contact-icon"></i>
+            </a>
+          </div>
+     
       </div>
+
+
+      <div class="skills-container fullheight">
+        <div class="skills-header">
+          <h4 class="">What I've learned so far...</h4>
+          <p>Having taught myself the basics of coding using online platforms, in 2019 I wanted to progress my knowledge further and enrolled with General Assembly on their 12 week immersive programme. The course covered a huge amount to get us ready for a career in industry, including covering the following skills and technologies:</p>
+        </div>
+    
+        <div class="skills">     
+          <div class="tech-item">
+            <i class="fab fa-html5"></i>
+            <span class="tech-text">html5</span>
+          </div>
+          <div class="tech-item">
+              <i class="devicon-sass-original colored"></i>
+            <span class="tech-text">sass</span>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-javascript-plain colored"></i>
+            <span class="tech-text">javascript</span>
+          </div>
+          <div class="tech-item">
+              <img src="https://img.icons8.com/color/48/000000/python.png" width="25"> 
+            <span class="tech-text">python</span>
+          </div>
+          <div class="tech-item">
+              <i class="devicon-react-original colored"></i>
+            <span class="tech-text">reactjs</span>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-express-original colored"></i>
+            <span class="tech-text">express.js</span>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-heroku-originasl"></i>
+            <span class="tech-text">heroku</span>
+          </div>
+          <div class="tech-item">
+              <i class="devicon-mongodb-plain"></i>
+              <span class="tech-text">MongoDB</span>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-postgresql-plain colored"></i>
+            <span class="text-text">postgresql</span>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-mocha-plain colored"></i>
+            <span class="text-text">mocha</span>
+          </div>
+          <div class="tech-item">
+            <i class="devicon-git-plain colored"></i>
+            <span class="text-text">git</span>
+          </div>
+         </div>
+      
       </div>
+  
+    <div class="projects">
 
-      <div class="about">
-        <p class="about-text">Before I started coding, I had no idea what the code for even the simplest websites looked like, so I decided to make my portfolio show exactly that! The code panels show you the code to make this profile and each panel has a link to W3Schools, a great online resource if you want to learn more.</p>
-        <a href="#code-panels" class="i-p-link">Jump straight to the code</a>
-      </div>
-
-      <div class="projects-container">
-        <h4 class="project-text">Technology I've used:</h4>
-        <span class="skills">html5</span>
-        <span class="skills">css</span>
-        <span class="skills">javascript</span>
-        <span class="skills">python</span>
-        <span class="skills">flask</span>
-        <span class="skills">sql</span>
-        <span class="skills">nosql</span>
-        <span class="skills">postgresql</span>
-        <span class="skills">vue.js</span>
-        <span class="skills">reactjs</span>
-        <span class="skills">chai</span>
-        <span class="skills">mocha</span>
-        <span class="skills">git</span>
-        <span class="skills">express.js</span>
-        <span class="skills">heroku</span>
-
-        <h4 class="things-text">Things I've built:</h4>
-
-        <div class="projects">
+        <div class="project-header">
+          <h4 class="">Projects</h4>
+          <p>As part of the intensive course, we worked on a number of projects both individually and in groups. I've outlined these projects below, click through to the links to try them out or see the code!</p>
+        </div>
+        <div class="project-wrapper">
           <div class="project">
               <h5 class="proj-head">Space Invaders</h5>
-            <img src="https://i.imgur.com/wYcTIr7.png" alt="Space Invaders" class="proj-thumb">
+              <p>A recreation of the classic arcade game Space Invaders, using JavaScript, HTML and CSS</p>
+            <img src="https://i.imgur.com/wYcTIr7.png" alt="Space Invaders" class="proj-thumb"/>
             <br />
             <div class="proj-deets">
               <a href="https://github.com/CPrich905/sei-project-1" class="project-code">See the code</a>
               <a href="https://cprich905.github.io/sei-project-1/" class="deployed-link">Use the App</a>
+          
             </div>
 
           </div>
           <div class="project">
-
-              <h5 class="proj-head">The Movie DataBase</h5>
+            <h5 class="proj-head">The Movie DataBase</h5>
+            <p>Our first pair-coding project, recreating an IMDB style page using HTML, SCSS, Bulma, React and The Movie Database API</p>
             <img src="https://i.imgur.com/cqlM8u4.png" alt="tmdb2" class="proj-thumb"/>
             <br />
             <div class="proj-deets">
@@ -81,10 +124,10 @@
           <div class="project">
             <div>
               <h5 class="proj-head">Stranger Things</h5>
-
+              <p>GitMaster for our teams group project, a meet-up app for Londoners. We used HTML, SCSS & Skeleton framework, JavaScript, React and Express as well as a number of dependencies to reach our final product.</p>
             </div>
 
-            <img src="https://i.imgur.com/cniJpvc.png" alt="Stranger Things" class="proj-thumb">
+            <img src="https://i.imgur.com/cniJpvc.png" alt="Stranger Things" class="proj-thumb"/>
             <br />
             <div class="proj-deets">
               <a href="https://github.com/CPrich905/sei-group-project" class="project-code">See the code</a>
@@ -95,10 +138,10 @@
           <div class="project">
             <div class="proj-text">
               <h5 class="proj-head">Cooking with Mum</h5>
-
+              <p>Inspired by my mum's amazing cooking, for my final project I created a recipe sharing app with shopping list and store-cupboard features for registered users. This app is built with HTML, SCSS & Bulma, JavaScript and React.</p>
             </div>
 
-            <img src="https://i.imgur.com/Rj0NAwr.png" alt="Cooking With Mum" class="proj-thumb">
+            <img src="https://i.imgur.com/Rj0NAwr.png" alt="Cooking With Mum" class="proj-thumb"/>
             <br />
             <div class="proj-deets">
               <a href="https://github.com/CPrich905/sei-project-4" class="project-code">See the code</a>
@@ -108,40 +151,7 @@
           </div>
         </div>
       </div>
-
-      <div class="me-container">
-        <p class="me-text">If I'm not at my desk, I really hope I'm in one of these awesome places...<p>
-        <div class="me-images">
-          <a href="https://imgur.com/JpDUM1u"><img src="https://i.imgur.com/JpDUM1u.jpg" title="source: imgur.com" alt="Aonach Egach, UK" class="thumb"/></a>
-          <a href="https://imgur.com/FOOg7m6"><img src="https://i.imgur.com/FOOg7m6.jpg" title="source: imgur.com" alt="Aonach Egach, UK" class="thumb"/></a>
-          <a href="https://imgur.com/VjIfpJm"><img src="https://i.imgur.com/VjIfpJm.jpg" title="source: imgur.com" alt="Crianlarich" class="thumb"/></a>
-          <a href="https://imgur.com/0qOjfVc"><img src="https://i.imgur.com/0qOjfVc.jpg" title="source: imgur.com" alt="Norway 18" class="thumb"/></a>
-          <a href="https://imgur.com/eG80N6W"><img src="https://i.imgur.com/eG80N6W.jpg" title="source: imgur.com" alt="Family" class="thumb"/></a>
-          <a href="https://imgur.com/skZWhwP"><img src="https://i.imgur.com/skZWhwP.jpg" title="source: imgur.com" alt="Lake District, UK" class="thumb"/></a>
-          <a href="https://imgur.com/mEDAbAs"><img src="https://i.imgur.com/mEDAbAs.jpg" title="source: imgur.com" alt="Verbier, Switzerland" class="thumb"/></a>
-          <a href="https://imgur.com/yuWngld"><img src="https://i.imgur.com/yuWngld.jpg" title="source: imgur.com" alt="Verbier, Switzerland" class="thumb"/></a>
-          <a href="https://imgur.com/GPsGBHH"><img src="https://i.imgur.com/GPsGBHH.jpg" title="source: imgur.com" alt="Tonsai, Thailand" class="thumb"/></a>
-          <a href="https://imgur.com/hXqeF8d"><img src="https://i.imgur.com/hXqeF8d.jpg" title="source: imgur.com" alt="Tonsai, Thailand" class="thumb"/></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- CODE PENS -->
-    <div class="code" id="code-panels">
-      <div class="html-box">
-        <div class="html-header">
-          HTML
-        </div>
-          <script src="https://gist.github.com/CPrich905/ad426ac85838c3872e7b7383c107d1dd.js" class="gist"></script>
-
-      </div>
-      <div class="css-box">
-        <div class="css-header">
-          CSS
-        </div>
-          <script src="https://gist.github.com/CPrich905/4b4e9a5860b135b12e35244c2706be48.js" class="gist"></script>
-    </div>
-  </div>
+    
 
 </body>
 

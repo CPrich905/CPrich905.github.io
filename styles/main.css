@@ -2,187 +2,100 @@
 * {
   box-sizing: border-box;
   font-family: 'Questrial', sans-serif;
-  color: white;
+  /* display: flex; */
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  color: black;
+  background-color: #FCE9C5;
 }
 
-.display {
+.fullheight {
+  height: 100vh;
+  border: 2px solid blue;
+  justify-content: center;
+}
+
+.profile {
   width: 100vw;
-  background-image:
-    linear-gradient(black, black),
-    url('https://i.imgur.com/zFHbMjR.jpg');
-    background-blend-mode: saturation;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-shadow: 1px 1px grey;
+  text-align: center;
+  flex-direction: column; 
 }
 
-.profile, .about, .projects-container, .me-container {
-  text-align: center;
-  padding: 2px;
+.profile-text {
+  padding: 10px;
 }
 
 .profile-pic {
-  border-radius: 50%;
-  height: 200px;
+  width: 200px;
+  border-radius: 25%;
+  margin: 10px;
+  align-self: center;
 }
 
-.i-p-link {
-  text-decoration: none;
-}
-
-.contact {
-  display: flex;
+.skills-container {
+  width: 100%;
   text-align: center;
-  justify-content: center;
-}
-
-.contact-icon {
-  margin: 5px;
-}
-
-.about {
-  font-size: large;
-}
-
-about-text {
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills {
-  text-transform: uppercase;
-  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  align-content: center;
 }
 
-.projects, .me-images {
-  padding: 2px;
-  height: 80%;
-  overflow-x: scroll;
-  display: flex;
-  white-space: nowrap;
+.tech-item {
+  margin: 5px;
+  width: 10rem;
+  height: 4rem;
+}
+
+.projects {
+  text-align: center;
 }
 
 .project {
-  margin: 2px;
+  width: 100vw;
+}
+
+.proj-thumb {
+  width: 100%;
   padding: 2px;
-  display: inline-block;
-  max-width: 400px;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.proj-deets {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.proj-thumb, .thumb {
-  height: 200px;
-  object-fit: cover;
-  margin-left: 2px;
-}
-
-.project-code, .deployed-link {
-  text-decoration: none;
-  margin: .5rem 1rem;
-}
-
-.html-box {
-  display: inline-block;
-}
-
-.html-header, .css-header {
-  color: black;
-  text-align: center;
-}
-
-.gist {
-  width: 100vw !important;
-  max-height: 50vh;
-  overflow: scroll;
 }
 
 
-/* DESKTOP STYLING */
-@media only screen and (min-width: 1048px) {
-  .display, .code {
-    width: 50%;
-    height: 100vh;
-    overflow: scroll;
-    flex-direction: column;
-  }
-
-  .display {
-    float: left;
-    /* padding: 5px; */
-    margin: 0 auto;
-  }
-
-  .code {
-    float: right;
-  }
-
+@media (min-width: 768px) {
   .profile {
-    height: 230px;
-    margin: 0 auto;
-    padding: 10px;
-  }
-
-  .profile-pic {
-    align-self: center;
-    margin: .5rem 2.5rem;
-    box-shadow: .5em .75em .5em lightgrey;
-    float: right;
-  }
-
-  .profile-text {
-    float: left;
-    width: 60%;
-    margin-top: 1.5rem;
-  }
-
-  .contact {
     display: flex;
-    float: left;
+  }
+  
+  .skills-header, .project-header {
+    margin: 5%;
+  }
+
+  .project-wrapper {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    text-align: center;
-  }
-
-  .i-p-link {
-    display: none;
-  }
-
-  .about, .projects-container, .project-text, .me-container, .me-text {
-    height: auto;
-  }
-
-  .me-text {
-    height: 20%;
-  }
-
-  .things-text {
-    margin-top: 10rems;
-    margin-bottom: 0;
+    flex-wrap: wrap;
   }
 
   .project {
-    height: 80%;
+    width: 40%;
+    margin: 0, auto;
+    padding: 10px;
   }
 
-  .gist {
-    width: 50vw !important;
-    height: 100%;
-    overflow-wrap: anywhere;
+  .proj-deets, .proj-thumb {
+    align-self: flex-end;
   }
 
-  .gist-meta {
-    display: none;
+  .proj-thumb {
+    max-height: 320px;
   }
-
 }
